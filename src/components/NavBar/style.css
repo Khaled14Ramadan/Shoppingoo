@@ -1,0 +1,34 @@
+.navBar{
+    background-color: var(--secondaryColor);
+}
+
+.logo{
+    color: var(--primaryColor);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.logo:hover {
+    color: var(--linkColor);
+}
+
+.navLink{
+    color: var(--linkColor);
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.navLink:hover {
+    color: var(--primaryColor);
+}
+
+.price{
+    color: var(--primaryColor);
+}
+
+.icon {
+    font-size: 2rem;
+}

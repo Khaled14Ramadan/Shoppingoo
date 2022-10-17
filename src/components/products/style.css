@@ -1,0 +1,16 @@
+
+
+.image{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.btn-card {
+    background-color: var(--secondaryColor) !important;
+    color: var(--linkColor) !important;
+}
+
+.btn-card:hover {
+    color: var(--primaryColor) !important;
+}
