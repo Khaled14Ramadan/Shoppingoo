@@ -1,6 +1,51 @@
 .appHeader{
   background-color: var(--bgColor);
   padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   height: 100%;
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.count {
+  background-color : white;
+  padding: 5px;
+  border-radius: 5px;
+  margin : 1rem;
+  color: black;  
+  max-width: fit-content;
+  font-size: 1.5rem;
+}
+
+
+.buttons button {
+  font-size: 1.5rem;
+  color: black;
+  padding :0;
+  margin: .5rem;
+  border-radius: 5px;
+  border:none;
+  outline:none;
+  cursor:pointer;
+  width: 3rem;
+}
+
+.buttons .btnD{
+  background-color:red;
+}
+
+.buttons .btnI{
+  background-color:blue;
+}
+
+.notZero{
+  text-align: center;
+  color: red;
 }

@@ -32,3 +32,17 @@ ul {
 .icon {
     font-size: 2rem;
 }
+
+.counter{
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -.5rem;
+    right: -.5rem;
+    background-color: red;
+    border-radius: 50%;
+    font-size: 1rem;
+}

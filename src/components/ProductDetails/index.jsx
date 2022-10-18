@@ -1,11 +1,19 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"
 import { Spinner } from 'react-bootstrap';
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../redux/cartSlice";
 
 
 const ProductDetails = () => {
     const pramas = useParams();
-    const [product, setProduct] = useState(null)
+    const [product, setProduct] = useState(null);
+    const dispatch = useDispatch();
+
+    const addProduct = ()=>{
+      dispatch(addToCart(product));
+    }
+
 
     useEffect(() => {
         getProduct();
@@ -42,9 +50,10 @@ const ProductDetails = () => {
                                 <h2>{product.title}</h2>
                                 <h4>price : <span className="price">{product.price} </span>$</h4>
                                 <h6> <h4 className="d-inline-block">category:</h4> {product.category} </h6>
+                                <h4>rate: <span className="price">{product.rating.rate} </span> </h4>
                                 <p>{product.description}</p>
                             </div>
-                            <button className="btn-card btn btn-info">Add to Card</button>
+                            <button className="btn-card btn btn-info" onClick={addProduct}>Add to Card</button>
                         </div>
                     </div>
                 </div>

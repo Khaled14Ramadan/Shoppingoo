@@ -2,8 +2,12 @@
 import { Link } from "react-router-dom";
 import './style.css';
 import { BsCart4 } from 'react-icons/bs';
+import { useSelector } from "react-redux";
 
 const NavBar = () => {
+
+  const totalcount = useSelector(state=>state.cartList.totalCounter);
+
   return (
     <>
      <nav className="navBar py-2 fixed-top">
@@ -12,9 +16,16 @@ const NavBar = () => {
             <ul className="d-flex me-auto pt-4">
                 <li><Link to='/' className="navLink">Home</Link></li>
                 <li><Link to='/products' className="navLink">Products</Link></li>
+                <li><Link to='/counter' className="navLink">Counter</Link></li>
             </ul>
-            <ul className="d-flex ms-auto">
+            <ul className="d-flex ms-auto position-relative">
                 <li><Link to='/cart' className="navLink icon"><BsCart4/></Link></li>
+                {
+                  totalcount?
+                  <div class="counter text-white text-center">{totalcount}</div>
+                  :
+                  <></>
+                }
             </ul>
         </div>
      </nav>

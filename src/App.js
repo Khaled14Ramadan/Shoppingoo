@@ -6,6 +6,7 @@ import Home from './components/Home/index';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProductDetails from './components/ProductDetails';
 import Cart from './components/Cart/index';
+import FormCounter from './components/counter/formCounter';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/products' element={<Products/>} />
+          <Route path='/counter' element={<FormCounter/>} />
           <Route path='/cart' element={<Cart/>} />
           <Route path='/details/:id' element={<ProductDetails/>} />
         </Routes>

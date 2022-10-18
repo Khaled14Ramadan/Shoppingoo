@@ -23,7 +23,7 @@ const Products = () => {
 
   if (!products) {
     return (
-      <div className="d-flex justify-content-center align-content-center">
+      <div className="d-flex justify-content-center align-content-center vh-100">
         <Spinner animation="border" role="status">
           <span className="visually-hidden">Loading...</span>
         </Spinner>
