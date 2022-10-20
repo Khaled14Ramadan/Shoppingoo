@@ -40,7 +40,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    top: -.5rem;
+    top: -.25rem;
     right: -.5rem;
     background-color: red;
     border-radius: 50%;

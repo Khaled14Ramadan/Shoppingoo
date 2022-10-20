@@ -15,15 +15,17 @@ const ProductDetails = () => {
     }
 
 
-    useEffect(() => {
-        getProduct();
-    }, []);
+    
 
     const getProduct = () => {
         fetch(`https://fakestoreapi.com/products/${pramas.id}`)
             .then(res => res.json())
             .then(json => setProduct(json))
     }
+
+    useEffect(() => {
+        getProduct();
+    }, []);
 
     console.log(product);
 
